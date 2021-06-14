@@ -1,0 +1,24 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/vocab/cpsv#> .
+@prefix ns2: <http://data.europa.eu/m8g/> .
+
+<http://example.com/catalogs/1> a dcat:Catalog ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/912660680> ;
+    dct:title "En tjenestekatalog med data fra Oppgaveregisteret"@nb ;
+    dcat:service <https://data.brreg.no/oppgaveregisteret/api/skjema/ZX> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/ZX> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description """Skaffe oversikt over alle næringsdrivende foretak i Norge \r
+\r
+Identifisere registreringsenheter i forbindelse med tildeling av organisasjonsnummer. Holde oversikt over grunndata for den enkelte registreringsenhet. Bidra til å redusere oppgavepliktene for næringslivet. """@nb ;
+    dct:identifier "ZX" ;
+    dct:title "Samordnet registermelding Del 1-Hovedblankett"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1970-01-16-1/§>,
+        <https://lovdata.no/dokument/NL/lov/1984-06-08-58/§79>,
+        <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§2-1>,
+        <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§4-1>,
+        <https://lovdata.no/dokument/NL/lov/1994-06-03-15/§4> .
+
+
