@@ -1,23 +1,108 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://data.europa.eu/m8g/> .
-@prefix ns2: <http://purl.org/vocab/cpsv#> .
+@prefix ns1: <http://purl.org/vocab/cpsv#> .
+@prefix ns2: <http://data.europa.eu/m8g/> .
 
 <https://data.brreg.no/katalog/tjenester/oppgaveregisteret> a dcat:Catalog ;
     dct:description "Katalogen er basert på et utvalg av beskrivelser fra Oppgaveregisteret"@nb ;
     dct:identifier "oppgaveregisteret_tjenestekatalog" ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/912660680> ;
     dct:title "En tjenestekatalog med data fra Oppgaveregisteret"@nb ;
-    dcat:service <https://data.brreg.no/oppgaveregisteret/api/skjema/ZX> .
+    dcat:service <https://data.brreg.no/oppgaveregisteret/api/skjema/103>,
+        <https://data.brreg.no/oppgaveregisteret/api/skjema/1AB5>,
+        <https://data.brreg.no/oppgaveregisteret/api/skjema/1E6W>,
+        <https://data.brreg.no/oppgaveregisteret/api/skjema/ZR>,
+        <https://data.brreg.no/oppgaveregisteret/api/skjema/ZS>,
+        <https://data.brreg.no/oppgaveregisteret/api/skjema/ZX>,
+        <https://data.brreg.no/oppgaveregisteret/api/skjema/ZY>,
+        <https://data.brreg.no/oppgaveregisteret/api/skjema/ZZ> .
 
-<https://data.brreg.no/oppgaveregisteret/api/skjema/ZX> a ns2:PublicService ;
-    ns1:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+<https://data.brreg.no/oppgaveregisteret/api/skjema/103> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description "Identifisere registreringsenheter i forbindelse med tildeling av organisasjonsnummer. Holde oversikt over grunndata for den enkelte registreringsenhet. Bidra til å redusere oppgavepliktene for næringslivet. "@nb ;
+    dct:identifier "103" ;
+    dct:title "Konsernmelding"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1970-01-16-1/§>,
+        <https://lovdata.no/dokument/NL/lov/1994-06-03-15/§4> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/1AB5> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description "Regnskapsregisteret benytter skjemaet til registrering av årsregnskap og som del av årsregnskapet for dokumentasjon på innregistrerte opplysninger."@nb ;
+    dct:identifier "1AB5" ;
+    dct:title "Årsregnskap etter regel om begrenset regnskapsplikt"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1998-07-17-56/§3-2b>,
+        <https://lovdata.no/dokument/NL/lov/1998-07-17-56/§8-2> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/1E6W> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description "Regnskapsregisteret benytter skjemaet til registrering og offentliggjøring av mellombalansen. Denne danner grunnlag for disposisjoner når disse skal foretas på grunnlag av mellombalanse."@nb ;
+    dct:identifier "1E6W" ;
+    dct:title "Mellombalanse"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§10-20>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§12-2>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§3-8>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§8-10>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§8-2a>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§8-7>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§8-9>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-44/§9-3>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§10-20>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§12-2>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§3-8>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§8-10>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§8-2a>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§8-7>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§8-9>,
+        <https://lovdata.no/dokument/NL/lov/1997-06-13-45/§9-3> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/ZR> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description "Regnskapsregisteret benytter skjemaet til registrering av årsregnskap og som del av årsregnskapet for dokumentasjon på innregistrerte opplysninger. "@nb ;
+    dct:identifier "ZR" ;
+    dct:title "Vedlegg til årsregnskap"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1998-07-17-56/§8-2> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/ZS> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description "Regnskapsregisteret benytter skjemaet til registrering av årsregnskap og som del av årsregnskapet for dokumentasjon på innregistrerte opplysninger. "@nb ;
+    dct:identifier "ZS" ;
+    dct:title "Årsregnskap"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1998-07-17-56/§8-2> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/ZX> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
     dct:description """Skaffe oversikt over alle næringsdrivende foretak i Norge \r
 \r
 Identifisere registreringsenheter i forbindelse med tildeling av organisasjonsnummer. Holde oversikt over grunndata for den enkelte registreringsenhet. Bidra til å redusere oppgavepliktene for næringslivet. """@nb ;
     dct:identifier "ZX" ;
     dct:title "Samordnet registermelding Del 1-Hovedblankett"@nb ;
-    ns2:follows <https://lovdata.no/dokument/NL/lov/1970-01-16-1/§>,
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1970-01-16-1/§>,
+        <https://lovdata.no/dokument/NL/lov/1984-06-08-58/§79>,
+        <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§2-1>,
+        <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§4-1>,
+        <https://lovdata.no/dokument/NL/lov/1994-06-03-15/§4> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/ZY> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description """Skaffe oversikt over alle næringsdrivende foretak i Norge \r
+\r
+Identifisere registreringsenheter i forbindelse med tildeling av organisasjonsnummer. Holde oversikt over grunndata for den enkelte registreringsenhet. Bidra til å redusere oppgavepliktene for næringslivet. """@nb ;
+    dct:identifier "ZY" ;
+    dct:title "Forenklet registermelding Del 1-blankett for sletting"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1970-01-16-1/§>,
+        <https://lovdata.no/dokument/NL/lov/1984-06-08-58/§79>,
+        <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§2-1>,
+        <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§4-1>,
+        <https://lovdata.no/dokument/NL/lov/1994-06-03-15/§4> .
+
+<https://data.brreg.no/oppgaveregisteret/api/skjema/ZZ> a ns1:PublicService ;
+    ns2:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+    dct:description """Skaffe oversikt over alle næringsdrivende foretak i Norge \r
+\r
+Identifisere registreringsenheter i forbindelse med tildeling av organisasjonsnummer. Holde oversikt over grunndata for den enkelte registreringsenhet. Bidra til å redusere oppgavepliktene for næringslivet. """@nb ;
+    dct:identifier "ZZ" ;
+    dct:title "Forenklet registermelding Del 1-blankett for enkeltpersonforetak"@nb ;
+    ns1:follows <https://lovdata.no/dokument/NL/lov/1970-01-16-1/§>,
         <https://lovdata.no/dokument/NL/lov/1984-06-08-58/§79>,
         <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§2-1>,
         <https://lovdata.no/dokument/NL/lov/1985-06-21-78/§4-1>,
